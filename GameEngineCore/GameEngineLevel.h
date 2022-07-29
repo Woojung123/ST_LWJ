@@ -131,6 +131,7 @@ public:
 		return Result;
 	}
 
+
 protected:
 
 
@@ -148,6 +149,10 @@ private:
 	void LevelUpdate(float DeltaTime);
 
 	void RemoveActor(GameEngineActor* _Actor);
+
+
+	void OverChildMove(GameEngineLevel* _NextLevel);
+
 
 private:
 	// 0번 백그라운드

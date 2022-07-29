@@ -27,6 +27,8 @@ void TestUnit::AttEnd(const FrameAnimation_DESC& _Info)
 {
 	AttCheck = true;
 	Renderer->ChangeFrameAnimation("DragonStand");
+
+
 }
 
 void TestUnit::Start()
