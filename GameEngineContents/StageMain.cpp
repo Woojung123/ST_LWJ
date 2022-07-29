@@ -241,6 +241,12 @@ void StageMain::Update(float _DeltaTime)
 
 			Stage5(_DeltaTime);
 		}
+		else if (StageCount == 6)
+		{
+
+			Stage6(_DeltaTime);
+		}
+
 
 	}
 	
@@ -479,7 +485,48 @@ void StageMain::Stage5(float _DeltaTime)
 }
 void StageMain::Stage6(float _DeltaTime)
 {
+	MonTime += _DeltaTime;
 
+
+	int BosMax = 1;
+
+	if (MonTime >= MonTimeMax)
+	{
+
+		if (MonCount == BosMax)
+		{
+
+
+			if (GetGroup(OBJECTORDER::Monster).size() == 0)
+			{
+				MonTime = 0.f;
+				GamePlayTime = 0.f;
+				MonCount = 0;
+				++StageCount;
+				StartCheck = false;
+			}
+
+			return;
+		}
+		MonTime -= MonTimeMax;
+
+		{
+			Overload* TestUni = CreateActor<Overload>(OBJECTORDER::Monster);
+			TestUni->m_Info.m_Hp = 5000;
+			TestUni->m_Info.Gold = 8;
+			auto	iter = CheckPoint.begin();
+			auto	iterEnd = CheckPoint.end();
+
+			for (; iter != iterEnd; ++iter)
+			{
+				TestUni->SetCheckPoinr(*iter);
+			}
+
+		}
+
+		++MonCount;
+
+	}
 }
 void StageMain::Stage7(float _DeltaTime)
 {

@@ -127,6 +127,7 @@ void CannonB::Update(float _DeltaTime)
 			AttTime = 0.f;
 			AttCountMax = 3;
 			AttCount = 0;
+			AttCheck = false;
 		}
 
 
