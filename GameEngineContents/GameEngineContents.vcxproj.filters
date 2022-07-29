@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="00.Actor">
+      <UniqueIdentifier>{1c74ed1c-9761-412c-93d3-abef363512d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="99.Core">
+      <UniqueIdentifier>{eee3c248-3814-48af-b1f4-f221fa7a0ee6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Stage">
+      <UniqueIdentifier>{5df23444-ca8f-40f8-8c39-0d7d75f58b7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="97.Global">
+      <UniqueIdentifier>{5c0d327c-f680-4cd4-a5c1-9a7caec22b46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="98.PreCompile">
+      <UniqueIdentifier>{439c0504-814e-4f90-8507-3f4dacd0226c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit">
+      <UniqueIdentifier>{f046c344-41c5-461f-9a13-3bf9f04d9882}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\01.Monster">
+      <UniqueIdentifier>{d376050c-9962-43e7-82bd-36fd5f2ad011}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\02.Player">
+      <UniqueIdentifier>{0873b220-a7d4-4bbd-9a3d-55f97c0397b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\00.BackGround">
+      <UniqueIdentifier>{420d4d7c-80dc-435e-b9f5-b1339b865396}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\02.UI">
+      <UniqueIdentifier>{804cf31e-d3ed-4dc6-9803-e76637ce47a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\03.MainCamera">
+      <UniqueIdentifier>{59f501da-0c76-44ef-8620-1471da1939c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\02.UI\00.Logo">
+      <UniqueIdentifier>{a208fe50-cb5c-4477-b18c-a881d64a21d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\01.Monster\00.Monster">
+      <UniqueIdentifier>{3e09eaff-cb52-4c03-b3ed-3e7d79eccb1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\01.Monster\01.Boss">
+      <UniqueIdentifier>{17768d2f-5eda-4ae2-949f-7a51057c9d92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\04.Bullet">
+      <UniqueIdentifier>{3f1e2344-1cd2-49e1-9b95-6da183e131c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\04.Bullet\00.DraBall">
+      <UniqueIdentifier>{7827a957-4254-41da-85fa-56c2ac7e4b5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\02.Player\00.Level1">
+      <UniqueIdentifier>{3d15b492-4ff2-47be-af5d-f8358f5460db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\02.Player\00.Level1\00.Test">
+      <UniqueIdentifier>{bf7966c5-c7f3-49a6-9c9c-d5b9e11d48ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\02.Player\00.Level1\01.Ghost">
+      <UniqueIdentifier>{f0f89b96-f8ca-4327-b172-b80e41038dd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\04.Bullet\01.Marin/Ghost">
+      <UniqueIdentifier>{4f71be3c-2886-4d1e-9265-6275ca1164c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\02.Player\00.Level1\02.Marin">
+      <UniqueIdentifier>{57f188b5-d8c8-4c97-93d6-5a3272f926a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\05.DeathEffect">
+      <UniqueIdentifier>{dc4164f9-b174-402f-b9fe-ffc786e827c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\04.Bullet\02.Sunken">
+      <UniqueIdentifier>{030e77b7-421d-438d-9e86-15471826f928}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\02.Player\00.Level1\03.Zealot">
+      <UniqueIdentifier>{10bc7f46-325a-4592-9d7f-07c9a4f96b58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\02.Player\00.Level1\04.Hydra">
+      <UniqueIdentifier>{1019544b-61a5-453e-844d-65594d163345}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\02.Player\00.Level1\05.Corsair">
+      <UniqueIdentifier>{d8df063f-02a2-423a-862f-ff665e7c781c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\02.Player\00.Level1\07.Gardian">
+      <UniqueIdentifier>{a4257f07-719c-4137-9938-676ab931954b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\02.UI\01.Stage">
+      <UniqueIdentifier>{2768479a-1b5f-417a-8754-aa3701ac9e7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\02.UI\01.Stage\00.Test">
+      <UniqueIdentifier>{b80c6af1-8394-41b7-ab0a-ddf13d5186b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\02.Player\01.Level2">
+      <UniqueIdentifier>{38f379e3-fe88-4bcf-aec5-6896ad7d8410}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\02.Player\00.Level1\06.Zergling">
+      <UniqueIdentifier>{4340d336-2bec-492d-9056-7755f9f7afd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\04.Bullet\03.Spore">
+      <UniqueIdentifier>{cf1c75ed-94dd-4e6c-b476-b8b41f9ddbb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\04.Bullet\04.BloodBullet">
+      <UniqueIdentifier>{7a71d2d7-d817-451d-ae47-9ce922096dfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\01.Monster\00.Monster\00.corsair">
+      <UniqueIdentifier>{d88a9fec-999e-4e7b-8c6a-47836e92d9d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\01.Monster\00.Monster\01.Divaoler">
+      <UniqueIdentifier>{38401920-4aa1-4933-806e-4a0cdcd7bd9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\01.Monster\00.Monster\02.Overload">
+      <UniqueIdentifier>{931badc3-992f-4bda-905f-cfaf7c50e084}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\01.Monster\00.Monster\04.ScoutMon">
+      <UniqueIdentifier>{d1eca079-331b-44e4-aa1e-1c8eba2c8a75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\01.Monster\00.Monster\05.UltraMon">
+      <UniqueIdentifier>{8a31aa8f-07e4-43a5-9639-5a99b3762f1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\04.Bullet\05.poison">
+      <UniqueIdentifier>{6bac375a-99fa-43fc-94fe-33f8ad9320ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\02.Player\01.Level2\00.HighT">
+      <UniqueIdentifier>{01023071-a845-49d1-a16b-8da69cc8573a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\04.Bullet\06.Storm">
+      <UniqueIdentifier>{e618770d-b638-407b-aefd-c5356e3561ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\02.Player\01.Level2\01.Photo">
+      <UniqueIdentifier>{5d0643d0-472a-472a-9f24-973e2c69a3bc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ContentsCore.h">
+      <Filter>99.Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums.h">
+      <Filter>97.Global</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalContentsValue.h" />
+    <ClInclude Include="PreCompile.h">
+      <Filter>98.PreCompile</Filter>
+    </ClInclude>
+    <ClInclude Include="StageLogo.h">
+      <Filter>01.Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="StageMain.h">
+      <Filter>01.Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMap.h">
+      <Filter>00.Actor\00.BackGround</Filter>
+    </ClInclude>
+    <ClInclude Include="StageMainCamera.h">
+      <Filter>00.Actor\03.MainCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="TestUnit.h">
+      <Filter>00.Actor\01.Unit\02.Player\00.Level1\00.Test</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginUI.h">
+      <Filter>00.Actor\02.UI\00.Logo</Filter>
+    </ClInclude>
+    <ClInclude Include="LogoBack.h">
+      <Filter>00.Actor\02.UI\00.Logo</Filter>
+    </ClInclude>
+    <ClInclude Include="EixtButton.h">
+      <Filter>00.Actor\02.UI\00.Logo</Filter>
+    </ClInclude>
+    <ClInclude Include="StartButton.h">
+      <Filter>00.Actor\02.UI\00.Logo</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleButton.h">
+      <Filter>00.Actor\02.UI\00.Logo</Filter>
+    </ClInclude>
+    <ClInclude Include="DraBall.h">
+      <Filter>00.Actor\04.Bullet\00.DraBall</Filter>
+    </ClInclude>
+    <ClInclude Include="DraBallEff.h">
+      <Filter>00.Actor\04.Bullet\00.DraBall</Filter>
+    </ClInclude>
+    <ClInclude Include="GhostC.h">
+      <Filter>00.Actor\01.Unit\02.Player\00.Level1\01.Ghost</Filter>
+    </ClInclude>
+    <ClInclude Include="TerranBaseBullet.h">
+      <Filter>00.Actor\04.Bullet\01.Marin/Ghost</Filter>
+    </ClInclude>
+    <ClInclude Include="MarinC.h">
+      <Filter>00.Actor\01.Unit\02.Player\00.Level1\02.Marin</Filter>
+    </ClInclude>
+    <ClInclude Include="ZergDeath.h">
+      <Filter>00.Actor\05.DeathEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="ProDeath.h">
+      <Filter>00.Actor\05.DeathEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="Sunken.h">
+      <Filter>00.Actor\04.Bullet\02.Sunken</Filter>
+    </ClInclude>
+    <ClInclude Include="ZealotC.h">
+      <Filter>00.Actor\01.Unit\02.Player\00.Level1\03.Zealot</Filter>
+    </ClInclude>
+    <ClInclude Include="HydraC.h">
+      <Filter>00.Actor\01.Unit\02.Player\00.Level1\04.Hydra</Filter>
+    </ClInclude>
+    <ClInclude Include="CorsairC.h">
+      <Filter>00.Actor\01.Unit\02.Player\00.Level1\05.Corsair</Filter>
+    </ClInclude>
+    <ClInclude Include="GardianC.h">
+      <Filter>00.Actor\01.Unit\02.Player\00.Level1\07.Gardian</Filter>
+    </ClInclude>
+    <ClInclude Include="TestUI.h">
+      <Filter>00.Actor\02.UI\01.Stage\00.Test</Filter>
+    </ClInclude>
+    <ClInclude Include="ZerglingC.h">
+      <Filter>00.Actor\01.Unit\02.Player\00.Level1\06.Zergling</Filter>
+    </ClInclude>
+    <ClInclude Include="Spore.h">
+      <Filter>00.Actor\04.Bullet\03.Spore</Filter>
+    </ClInclude>
+    <ClInclude Include="SporeHit.h">
+      <Filter>00.Actor\04.Bullet\03.Spore</Filter>
+    </ClInclude>
+    <ClInclude Include="corsairMon.h">
+      <Filter>00.Actor\01.Unit\01.Monster\00.Monster\00.corsair</Filter>
+    </ClInclude>
+    <ClInclude Include="DivaolerMon.h">
+      <Filter>00.Actor\01.Unit\01.Monster\00.Monster\01.Divaoler</Filter>
+    </ClInclude>
+    <ClInclude Include="Overload.h">
+      <Filter>00.Actor\01.Unit\01.Monster\00.Monster\02.Overload</Filter>
+    </ClInclude>
+    <ClInclude Include="ScoutMon.h">
+      <Filter>00.Actor\01.Unit\01.Monster\00.Monster\04.ScoutMon</Filter>
+    </ClInclude>
+    <ClInclude Include="UltraMon.h">
+      <Filter>00.Actor\01.Unit\01.Monster\00.Monster\05.UltraMon</Filter>
+    </ClInclude>
+    <ClInclude Include="BloodBullet.h">
+      <Filter>00.Actor\04.Bullet\04.BloodBullet</Filter>
+    </ClInclude>
+    <ClInclude Include="BloodBEff.h">
+      <Filter>00.Actor\04.Bullet\04.BloodBullet</Filter>
+    </ClInclude>
+    <ClInclude Include="PoisonEff.h">
+      <Filter>00.Actor\04.Bullet\05.poison</Filter>
+    </ClInclude>
+    <ClInclude Include="UnitBase.h">
+      <Filter>00.Actor\01.Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="HighT.h">
+      <Filter>00.Actor\01.Unit\02.Player\01.Level2\00.HighT</Filter>
+    </ClInclude>
+    <ClInclude Include="Storm.h">
+      <Filter>00.Actor\04.Bullet\06.Storm</Filter>
+    </ClInclude>
+    <ClInclude Include="CannonB.h">
+      <Filter>00.Actor\01.Unit\02.Player\01.Level2\01.Photo</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ContentsCore.cpp">
+      <Filter>99.Core</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalContentsValue.cpp" />
+    <ClCompile Include="PreCompile.cpp">
+      <Filter>98.PreCompile</Filter>
+    </ClCompile>
+    <ClCompile Include="StageLogo.cpp">
+      <Filter>01.Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="StageMain.cpp">
+      <Filter>01.Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMap.cpp">
+      <Filter>00.Actor\00.BackGround</Filter>
+    </ClCompile>
+    <ClCompile Include="StageMainCamera.cpp">
+      <Filter>00.Actor\03.MainCamera</Filter>
+    </ClCompile>
+    <ClCompile Include="TestUnit.cpp">
+      <Filter>00.Actor\01.Unit\02.Player\00.Level1\00.Test</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginUI.cpp">
+      <Filter>00.Actor\02.UI\00.Logo</Filter>
+    </ClCompile>
+    <ClCompile Include="LogoBack.cpp">
+      <Filter>00.Actor\02.UI\00.Logo</Filter>
+    </ClCompile>
+    <ClCompile Include="EixtButton.cpp">
+      <Filter>00.Actor\02.UI\00.Logo</Filter>
+    </ClCompile>
+    <ClCompile Include="StartButton.cpp">
+      <Filter>00.Actor\02.UI\00.Logo</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleButton.cpp">
+      <Filter>00.Actor\02.UI\00.Logo</Filter>
+    </ClCompile>
+    <ClCompile Include="DraBall.cpp">
+      <Filter>00.Actor\04.Bullet\00.DraBall</Filter>
+    </ClCompile>
+    <ClCompile Include="DraBallEff.cpp">
+      <Filter>00.Actor\04.Bullet\00.DraBall</Filter>
+    </ClCompile>
+    <ClCompile Include="GhostC.cpp">
+      <Filter>00.Actor\01.Unit\02.Player\00.Level1\01.Ghost</Filter>
+    </ClCompile>
+    <ClCompile Include="TerranBaseBullet.cpp">
+      <Filter>00.Actor\04.Bullet\01.Marin/Ghost</Filter>
+    </ClCompile>
+    <ClCompile Include="MarinC.cpp">
+      <Filter>00.Actor\01.Unit\02.Player\00.Level1\02.Marin</Filter>
+    </ClCompile>
+    <ClCompile Include="ZergDeath.cpp">
+      <Filter>00.Actor\05.DeathEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="ProDeath.cpp">
+      <Filter>00.Actor\05.DeathEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="Sunken.cpp">
+      <Filter>00.Actor\04.Bullet\02.Sunken</Filter>
+    </ClCompile>
+    <ClCompile Include="ZealotC.cpp">
+      <Filter>00.Actor\01.Unit\02.Player\00.Level1\03.Zealot</Filter>
+    </ClCompile>
+    <ClCompile Include="CorsairC.cpp">
+      <Filter>00.Actor\01.Unit\02.Player\00.Level1\05.Corsair</Filter>
+    </ClCompile>
+    <ClCompile Include="GardianC.cpp">
+      <Filter>00.Actor\01.Unit\02.Player\00.Level1\07.Gardian</Filter>
+    </ClCompile>
+    <ClCompile Include="TestUI.cpp">
+      <Filter>00.Actor\02.UI\01.Stage\00.Test</Filter>
+    </ClCompile>
+    <ClCompile Include="HydraC.cpp">
+      <Filter>00.Actor\01.Unit\02.Player\00.Level1\04.Hydra</Filter>
+    </ClCompile>
+    <ClCompile Include="ZerglingC.cpp">
+      <Filter>00.Actor\01.Unit\02.Player\00.Level1\06.Zergling</Filter>
+    </ClCompile>
+    <ClCompile Include="Spore.cpp">
+      <Filter>00.Actor\04.Bullet\03.Spore</Filter>
+    </ClCompile>
+    <ClCompile Include="SporeHit.cpp">
+      <Filter>00.Actor\04.Bullet\03.Spore</Filter>
+    </ClCompile>
+    <ClCompile Include="corsairMon.cpp">
+      <Filter>00.Actor\01.Unit\01.Monster\00.Monster\00.corsair</Filter>
+    </ClCompile>
+    <ClCompile Include="DivaolerMon.cpp">
+      <Filter>00.Actor\01.Unit\01.Monster\00.Monster\01.Divaoler</Filter>
+    </ClCompile>
+    <ClCompile Include="Overload.cpp">
+      <Filter>00.Actor\01.Unit\01.Monster\00.Monster\02.Overload</Filter>
+    </ClCompile>
+    <ClCompile Include="ScoutMon.cpp">
+      <Filter>00.Actor\01.Unit\01.Monster\00.Monster\04.ScoutMon</Filter>
+    </ClCompile>
+    <ClCompile Include="UltraMon.cpp">
+      <Filter>00.Actor\01.Unit\01.Monster\00.Monster\05.UltraMon</Filter>
+    </ClCompile>
+    <ClCompile Include="BloodBullet.cpp">
+      <Filter>00.Actor\04.Bullet\04.BloodBullet</Filter>
+    </ClCompile>
+    <ClCompile Include="BloodBEff.cpp">
+      <Filter>00.Actor\04.Bullet\04.BloodBullet</Filter>
+    </ClCompile>
+    <ClCompile Include="PoisonEff.cpp">
+      <Filter>00.Actor\04.Bullet\05.poison</Filter>
+    </ClCompile>
+    <ClCompile Include="UnitBase.cpp">
+      <Filter>00.Actor\01.Unit</Filter>
+    </ClCompile>
+    <ClCompile Include="HighT.cpp">
+      <Filter>00.Actor\01.Unit\02.Player\01.Level2\00.HighT</Filter>
+    </ClCompile>
+    <ClCompile Include="Storm.cpp">
+      <Filter>00.Actor\04.Bullet\06.Storm</Filter>
+    </ClCompile>
+    <ClCompile Include="CannonB.cpp">
+      <Filter>00.Actor\01.Unit\02.Player\01.Level2\01.Photo</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

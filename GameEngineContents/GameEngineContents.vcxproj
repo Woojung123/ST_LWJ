@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{0d143cbd-f9fd-4345-acab-083421fc48de}</ProjectGuid>
+    <RootNamespace>GameEngineContents</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <EnableUnitySupport>false</EnableUnitySupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <EnableUnitySupport>false</EnableUnitySupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin\$(Configuration)\$(PlatformTarget)\</OutDir>
+    <IntDir>$(SolutionDir)Bin\$(Configuration)\$(PlatformTarget)\$(ProjectName)\</IntDir>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(SolutionDir)Bin\$(Configuration)\$(PlatformTarget)\;</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin\$(Configuration)\$(PlatformTarget)\</OutDir>
+    <IntDir>$(SolutionDir)Bin\$(Configuration)\$(PlatformTarget)\$(ProjectName)\</IntDir>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(SolutionDir)Bin\$(Configuration)\$(PlatformTarget)\;</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\;</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>PreCompile.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\;</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>PreCompile.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="BloodBEff.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="BloodBullet.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="CannonB.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="ContentsCore.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="CorsairC.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="corsairMon.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="DivaolerMon.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="DraBall.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="DraBallEff.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="EixtButton.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Enums.h" />
+    <ClInclude Include="GardianC.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="GhostC.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="GlobalContentsValue.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="HighT.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="HydraC.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="LogoBack.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="MarinC.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Overload.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="PoisonEff.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="ProDeath.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="ScoutMon.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="SingleButton.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Spore.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="SporeHit.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="StageMainCamera.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="MainMap.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="PreCompile.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="LoginUI.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="StageLogo.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="StageMain.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="StartButton.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Storm.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Sunken.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="TerranBaseBullet.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="TestUI.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="TestUnit.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="UltraMon.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="UnitBase.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="ZealotC.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="ZergDeath.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="ZerglingC.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BloodBEff.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="BloodBullet.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CannonB.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="ContentsCore.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="CorsairC.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="corsairMon.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="DivaolerMon.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="DraBall.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="DraBallEff.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="EixtButton.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="GardianC.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="GhostC.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="GlobalContentsValue.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HighT.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="HydraC.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="LogoBack.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="MarinC.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Overload.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="PoisonEff.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="ProDeath.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="ScoutMon.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="SingleButton.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Spore.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="SporeHit.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="StageMainCamera.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="MainMap.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="PreCompile.cpp">
+      <SubType>
+      </SubType>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="LoginUI.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="StageLogo.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="StageMain.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="StartButton.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Storm.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Sunken.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="TerranBaseBullet.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="TestUI.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="TestUnit.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="UltraMon.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="UnitBase.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="ZealotC.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="ZergDeath.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="ZerglingC.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
