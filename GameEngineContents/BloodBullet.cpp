@@ -40,6 +40,7 @@ void BloodBullet::Start()
 		Renderer->ChangeFrameAnimation("BolldBullet");
 
 	}
+	m_Info.Dammage = 20;
 }
 
 void BloodBullet::Update(float _DeltaTime)
@@ -71,7 +72,7 @@ void BloodBullet::Update(float _DeltaTime)
 			////DraBallEff
 			BloodBEff* TestUni = GetLevel()->CreateActor<BloodBEff>(OBJECTORDER::Effect);
 			TestUni->GetTransform().SetWorldPosition(MyPos);
-			((UnitBase*)TarGet)->m_Info.m_Hp -= 20;
+			((UnitBase*)TarGet)->m_Info.m_Hp -= m_Info.Dammage;;
 			Death();
 		}
 

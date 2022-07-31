@@ -43,6 +43,8 @@ void TerranBaseBullet::Start()
 		Renderer->ChangeFrameAnimation("scoutblt");
 		Renderer->AnimationBindEnd("scoutblt", &TerranBaseBullet::AttEnd, this);
 	}
+	m_Info.Dammage = 20;
+
 }
 
 void TerranBaseBullet::Update(float _DeltaTime)
@@ -50,7 +52,7 @@ void TerranBaseBullet::Update(float _DeltaTime)
 
 	if (!DamCheck)
 	{
-		((UnitBase*)TarGet)->m_Info.m_Hp -= 20;
+		((UnitBase*)TarGet)->m_Info.m_Hp -= m_Info.Dammage;;
 		DamCheck = true;
 	}
 

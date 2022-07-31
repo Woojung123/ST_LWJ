@@ -134,6 +134,27 @@ void ContentsCore::Start()
 	}
 
 
+	//성큰
+	{
+		GameEngineDirectory Dir;
+
+		Dir.MoveParentToExitsChildDirectory("ConstantResources");
+		Dir.Move("ConstantResources");
+		Dir.Move("Texture");
+		Dir.Move("Multi");
+		Dir.Move("Unit");
+		Dir.Move("zerg");
+		Dir.Move("Build");
+		Dir.Move("sunken");
+		Dir.Move("sunkenAtt");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../sunkenStand");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+	}
 
 	//울트라
 	{
@@ -155,7 +176,7 @@ void ContentsCore::Start()
 		Dir.Move("../ultraMoveU");
 
 		GameEngineFolderTexture::Load(Dir.GetFullPath());
-
+		\
 		Dir.Move("../ultraMoveL");
 
 		GameEngineFolderTexture::Load(Dir.GetFullPath());
@@ -164,7 +185,375 @@ void ContentsCore::Start()
 
 		GameEngineFolderTexture::Load(Dir.GetFullPath());
 
+		Dir.Move("../ultraStand");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
 	}
+
+
+	//울트라1
+	{
+		GameEngineDirectory Dir;
+
+		Dir.MoveParentToExitsChildDirectory("ConstantResources");
+		Dir.Move("ConstantResources");
+		Dir.Move("Texture");
+		Dir.Move("Multi");
+		Dir.Move("Unit");
+		Dir.Move("zerg");
+		Dir.Move("ultra");
+
+
+		Dir.Move("ultraAttack0");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ultraAttack1");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ultraAttack2");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ultraAttack3");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ultraAttack4");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+	}
+
+	//울트라2
+	{
+		GameEngineDirectory Dir;
+
+		Dir.MoveParentToExitsChildDirectory("ConstantResources");
+		Dir.Move("ConstantResources");
+		Dir.Move("Texture");
+		Dir.Move("Multi");
+		Dir.Move("Unit");
+		Dir.Move("zerg");
+		Dir.Move("ultra");
+
+
+		Dir.Move("ultraAttack5");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ultraAttack6");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ultraAttack7");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ultraAttack8");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ultraAttack9");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+	}
+
+
+	//울트라3
+	{
+		GameEngineDirectory Dir;
+
+		Dir.MoveParentToExitsChildDirectory("ConstantResources");
+		Dir.Move("ConstantResources");
+		Dir.Move("Texture");
+		Dir.Move("Multi");
+		Dir.Move("Unit");
+		Dir.Move("zerg");
+		Dir.Move("ultra");
+
+
+		Dir.Move("ultraAttack10");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ultraAttack11");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ultraAttack12");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ultraAttack13");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ultraAttack14");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+
+		Dir.Move("../ultraAttack15");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+	}
+
+
+	//닥템1
+	{
+		GameEngineDirectory Dir;
+
+		Dir.MoveParentToExitsChildDirectory("ConstantResources");
+		Dir.Move("ConstantResources");
+		Dir.Move("Texture");
+		Dir.Move("Multi");
+		Dir.Move("Unit");
+		Dir.Move("protoss");
+		Dir.Move("DarkT");
+
+
+		Dir.Move("DarkTAttack0");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../DarkTAttack1");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../DarkTAttack2");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../DarkTAttack3");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../DarkTAttack4");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+
+		Dir.Move("../DarkTStand12");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+	}
+
+	//닥템2
+	{
+		GameEngineDirectory Dir;
+
+		Dir.MoveParentToExitsChildDirectory("ConstantResources");
+		Dir.Move("ConstantResources");
+		Dir.Move("Texture");
+		Dir.Move("Multi");
+		Dir.Move("Unit");
+		Dir.Move("protoss");
+		Dir.Move("DarkT");
+
+
+		Dir.Move("DarkTAttack5");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../DarkTAttack6");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../DarkTAttack7");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../DarkTAttack8");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../DarkTAttack9");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+	}
+
+
+	//닥템3
+	{
+		GameEngineDirectory Dir;
+
+		Dir.MoveParentToExitsChildDirectory("ConstantResources");
+		Dir.Move("ConstantResources");
+		Dir.Move("Texture");
+		Dir.Move("Multi");
+		Dir.Move("Unit");
+		Dir.Move("protoss");
+		Dir.Move("DarkT");
+
+
+		Dir.Move("DarkTAttack10");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../DarkTAttack11");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../DarkTAttack12");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../DarkTAttack13");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../DarkTAttack14");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+
+		Dir.Move("../DarkTAttack15");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+	}
+
+
+	//아비터1
+	{
+		GameEngineDirectory Dir;
+
+		Dir.MoveParentToExitsChildDirectory("ConstantResources");
+		Dir.Move("ConstantResources");
+		Dir.Move("Texture");
+		Dir.Move("Multi");
+		Dir.Move("Unit");
+		Dir.Move("protoss");
+		Dir.Move("Arbitor");
+
+
+		Dir.Move("ArbitorMove0");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ArbitorMove1");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ArbitorMove2");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ArbitorMove3");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ArbitorMove4");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+
+		Dir.Move("../ArbitorMove5");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+	}
+
+	//아비터2
+	{
+		GameEngineDirectory Dir;
+
+		Dir.MoveParentToExitsChildDirectory("ConstantResources");
+		Dir.Move("ConstantResources");
+		Dir.Move("Texture");
+		Dir.Move("Multi");
+		Dir.Move("Unit");
+		Dir.Move("protoss");
+		Dir.Move("Arbitor");
+
+
+		Dir.Move("ArbitorMove6");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ArbitorMove7");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ArbitorMove8");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ArbitorMove9");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ArbitorMove10");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+	}
+
+
+	//아비터3
+	{
+		GameEngineDirectory Dir;
+
+		Dir.MoveParentToExitsChildDirectory("ConstantResources");
+		Dir.Move("ConstantResources");
+		Dir.Move("Texture");
+		Dir.Move("Multi");
+		Dir.Move("Unit");
+		Dir.Move("protoss");
+		Dir.Move("Arbitor");
+
+
+		Dir.Move("ArbitorMove11");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ArbitorMove12");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ArbitorMove13");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ArbitorMove14");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ArbitorMove15");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+
+
+	}
+
+
+	//아비터3
+	{
+		GameEngineDirectory Dir;
+
+		Dir.MoveParentToExitsChildDirectory("ConstantResources");
+		Dir.Move("ConstantResources");
+		Dir.Move("Texture");
+		Dir.Move("Multi");
+		Dir.Move("Unit");
+		Dir.Move("protoss");
+		Dir.Move("Archon");
+
+
+		Dir.Move("aulora0");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+	}
+
 
 
 	//오버로드

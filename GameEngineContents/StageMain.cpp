@@ -23,7 +23,10 @@
 #include "GardianC.h"
 #include "HighT.h"
 #include "CannonB.h"
-
+#include "UltraC.h"
+#include "SunkenC.h"
+#include "DarkTB.h"
+#include "ArbitorB.h"
 
 
 
@@ -180,11 +183,32 @@ void StageMain::Start()
 		TestUni->GetTransform().SetWorldPosition({ -1170.f,370.f,0.f });
 	}
 
+	{
+		UltraC* TestUni = CreateActor<UltraC>(OBJECTORDER::Player);
+		TestUni->GetTransform().SetWorldPosition({ -1170.f,310.f,0.f });
+	}
+
+	{
+		SunkenC* TestUni = CreateActor<SunkenC>(OBJECTORDER::Player);
+		TestUni->GetTransform().SetWorldPosition({ -1230.f,310.f,0.f });
+	}
+
+	{
+		DarkTB* TestUni = CreateActor<DarkTB>(OBJECTORDER::Player);
+		TestUni->GetTransform().SetWorldPosition({ -1230.f,370.f,0.f });
+	}
 
 	
+	{
+		ArbitorB* TestUni = CreateActor<ArbitorB>(OBJECTORDER::Player);
+		TestUni->GetTransform().SetWorldPosition({ -1290.f,370.f,0.f });
+	}
 
 
 
+
+
+	
 
 }
 void StageMain::Update(float _DeltaTime)
@@ -286,7 +310,7 @@ void StageMain::Stage1(float _DeltaTime)
 
 		{
 			corsairMon* TestUni = CreateActor<corsairMon>(OBJECTORDER::Monster);
-			TestUni->m_Info.m_Hp = 300;
+			TestUni->m_Info.m_Hp = 1300;
 			TestUni->m_Info.Gold = 8;
 			auto	iter = CheckPoint.begin();
 			auto	iterEnd = CheckPoint.end();

@@ -45,7 +45,7 @@ void Storm::Start()
 		Renderer->AnimationBindEnd("storm", &Storm::AttEnd, this);
 	}
 
-	//Death(5.f);
+	m_Info.Dammage = 20;
 
 }
 

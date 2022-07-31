@@ -40,6 +40,8 @@ void PoisonEff::Start()
 
 	}
 
+	m_Info.Dammage = 10;
+
 	Death(5.f);
 
 }
@@ -59,7 +61,7 @@ void PoisonEff::Update(float _DeltaTime)
 		if (m_dotDam >= 1.f)
 		{
 			m_dotDam -= 1.f;
-			((UnitBase*)TarGet)->m_Info.m_Hp -= 5;
+			((UnitBase*)TarGet)->m_Info.m_Hp -= m_Info.Dammage;;
 
 		}
 

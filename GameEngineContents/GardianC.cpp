@@ -18,6 +18,8 @@ GardianC::GardianC()
 	, ListLastCheck(false)
 	, m_Dir({ 0 })
 	, BAniChange(false)
+	, AttCount(0)
+	, AttCountMax(3)
 {
 }
 
@@ -29,8 +31,8 @@ GardianC::~GardianC()
 void GardianC::AttEnd(const FrameAnimation_DESC& _Info)
 {
 	AttCheck = true;
-	Renderer->ChangeFrameAnimation("GardianMove12");
-
+	//Renderer->ChangeFrameAnimation("GardianMove12");
+	BAniChange = false;
 }
 
 
@@ -86,6 +88,21 @@ void GardianC::Start()
 
 
 	}
+
+
+
+	{
+
+		BiconRenderer = CreateComponent<GameEngineTextureRenderer>();
+		BiconRenderer->CreateFrameAnimationFolder("aulora0", FrameAnimation_DESC("aulora0", 0.1f));
+		BiconRenderer->ChangeFrameAnimation("aulora0");
+		BiconRenderer->GetTransform().SetLocalScale({ 120.f,120.f,1.f });
+		float4 RenderWorldPos = BiconRenderer->GetTransform().GetWorldPosition();
+		
+		BiconRenderer->GetTransform().SetWorldPosition(RenderWorldPos);
+
+		 
+	}
 }
 
 void GardianC::Update(float _DeltaTime)
@@ -95,7 +112,8 @@ void GardianC::Update(float _DeltaTime)
 
 	int Monsize = (int)(Group.size());
 	int MonCount = 0;
-
+	AttCount = 0;
+	AttCountMax = 5;
 	auto	iter = Group.begin();
 	auto	iterEnd = Group.end();
 
@@ -106,12 +124,12 @@ void GardianC::Update(float _DeltaTime)
 		float4 MyPos = GetTransform().GetWorldPosition();
 		float4 Dist = MyPos - TarGetPos;
 		float MonLen = Dist.Length();
-
+		
 		++MonCount;
 
 		if (MonLen <= Reach)
 		{
-
+			++AttCount;
 			if (!BAniChange)
 			{
 				m_Dir = (TarGetPos - MyPos);
@@ -124,30 +142,37 @@ void GardianC::Update(float _DeltaTime)
 
 			if (AttCheck)
 			{
-				AttCheck = false;
-
-				BAniChange = false;
+				
+				
 				TestUni = GetLevel()->CreateActor<Spore>(OBJECTORDER::Bullet);
 				TestUni->GetTransform().SetWorldPosition(MyPos);
 				TestUni->SetTarGet(TarGet);
-				
-
-
-
+				TestUni->m_Info.Dammage = 80;
 			}
 
-			break;
+			if (AttCountMax >= (Monsize - 1))
+			{
+				AttCountMax = (Monsize - 1);
+			}
+
+			if (AttCount >= AttCountMax)
+			{
+				AttCheck = false;
+				AttCount = 0;
+				break;
+			}
+
 
 		}
 
 
 		if (MonCount == Monsize)
 		{
-
 			AttCheck = false;
-			BAniChange = false;
-			Renderer->ChangeFrameAnimation("GardianMove12");
+			//Renderer->ChangeFrameAnimation("GardianMove12");
 			AttTime = 0.f;
+			AttCount = 0;
+			AttCountMax = 5;
 		}
 
 

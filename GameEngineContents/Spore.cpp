@@ -33,13 +33,14 @@ void Spore::Start()
 	GetTransform().SetLocalScale({ 1, 1, 1 });
 	{
 		Renderer = CreateComponent<GameEngineTextureRenderer>();
-		Renderer->GetTransform().SetLocalScale({ 32.f,32.f,1.f });
+		Renderer->GetTransform().SetLocalScale({ 60.f,60.f,1.f });
 		//Renderer->GetTransform().SetWorldPosition({ -1050.f,370.f,0.f });
 
 		Renderer->CreateFrameAnimationFolder("Spore", FrameAnimation_DESC("Spore", 0.1f));
 		Renderer->ChangeFrameAnimation("Spore");
 
 	}
+	m_Info.Dammage = 20;
 }
 
 void Spore::Update(float _DeltaTime)
@@ -71,7 +72,7 @@ void Spore::Update(float _DeltaTime)
 			////DraBallEff
 			SporeHit* TestUni = GetLevel()->CreateActor<SporeHit>(OBJECTORDER::Effect);
 			TestUni->GetTransform().SetWorldPosition(MyPos);
-			((UnitBase*)TarGet)->m_Info.m_Hp -= 20;
+			((UnitBase*)TarGet)->m_Info.m_Hp -= m_Info.Dammage;
 			Death();
 		}
 

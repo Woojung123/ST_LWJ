@@ -53,6 +53,7 @@ void DraBall::Start()
 		Renderer->ChangeFrameAnimation("Draball");
 
 	}
+	m_Info.Dammage = 20;
 }
 
 void DraBall::Update(float _DeltaTime)
@@ -84,7 +85,7 @@ void DraBall::Update(float _DeltaTime)
 			////DraBallEff
 			DraBallEff* TestUni = GetLevel()->CreateActor<DraBallEff>(OBJECTORDER::Effect);
 			TestUni->GetTransform().SetWorldPosition(MyPos);
-			((UnitBase*)TarGet)->m_Info.m_Hp -= 20;
+			((UnitBase*)TarGet)->m_Info.m_Hp -= m_Info.Dammage;;
 			Death();
 		}
 

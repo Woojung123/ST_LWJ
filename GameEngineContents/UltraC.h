@@ -3,33 +3,35 @@
 #include <GameEngineCore/CoreMinimal.h>
 #include "UnitBase.h"
 // Ό³Έν :
-class Spore;
 class GameEngineTextureRenderer;
-class GardianC : public UnitBase
+class UltraC : public UnitBase
 {
 public:
 	// constrcuter destructer
-	GardianC();
-	~GardianC();
+	UltraC();
+	~UltraC();
 
 	// delete Function
-	GardianC(const GardianC& _Other) = delete;
-	GardianC(GardianC&& _Other) noexcept = delete;
-	GardianC& operator=(const GardianC& _Other) = delete;
-	GardianC& operator=(GardianC&& _Other) noexcept = delete;
+	UltraC(const UltraC& _Other) = delete;
+	UltraC(UltraC&& _Other) noexcept = delete;
+	UltraC& operator=(const UltraC& _Other) = delete;
+	UltraC& operator=(UltraC&& _Other) noexcept = delete;
 
 protected:
 	//void AttEnd(const FrameAnimation_DESC& _Info);
 	void Start() override;
 	void Update(float _DeltaTime);
 	void End() {}
+
+
 	void AttEnd(const FrameAnimation_DESC& _Info);
-
-	void ChangeAni(float4 _Gopoint, float4 _WorldPos);
-	GameEngineTextureRenderer* Renderer;
-
 	GameEngineTextureRenderer* BiconRenderer;
-	Spore* TestUni;
+	GameEngineTextureRenderer* Renderer;
+	
+	void ChangeAni(float4 _Gopoint, float4 _WorldPos);
+
+	int		AttCount;
+	int		AttCountMax;
 	float4 Color;
 	float Reach;
 public:
@@ -37,19 +39,8 @@ public:
 	float	AttTime;
 	float	AttTimeMax;
 	float4	m_Dir;
-
 	bool	BAniChange;
 	bool	AttCheck;
 	bool	ListLastCheck;
-
-
-
-
-	int		AttCount;
-	int		AttCountMax;
-
-
-
-
 };
 

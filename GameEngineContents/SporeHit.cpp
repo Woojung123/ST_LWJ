@@ -32,7 +32,7 @@ void SporeHit::Start()
 	GetTransform().SetLocalScale({ 1, 1, 1 });
 	{
 		Renderer = CreateComponent<GameEngineTextureRenderer>();
-		Renderer->GetTransform().SetLocalScale({ 64.f,64.f,1.f });
+		Renderer->GetTransform().SetLocalScale({ 72.f,72.f,1.f });
 		//Renderer->GetTransform().SetWorldPosition({ -1050.f,370.f,0.f });
 
 		Renderer->CreateFrameAnimationFolder("SporeHit", FrameAnimation_DESC("SporeHit", 0.05f));

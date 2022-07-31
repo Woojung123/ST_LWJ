@@ -3,33 +3,36 @@
 #include <GameEngineCore/CoreMinimal.h>
 #include "UnitBase.h"
 // Ό³Έν :
-class Spore;
+class BloodBullet;
 class GameEngineTextureRenderer;
-class GardianC : public UnitBase
+class ArbitorB : public UnitBase
 {
 public:
 	// constrcuter destructer
-	GardianC();
-	~GardianC();
+	ArbitorB();
+	~ArbitorB();
 
 	// delete Function
-	GardianC(const GardianC& _Other) = delete;
-	GardianC(GardianC&& _Other) noexcept = delete;
-	GardianC& operator=(const GardianC& _Other) = delete;
-	GardianC& operator=(GardianC&& _Other) noexcept = delete;
+	ArbitorB(const ArbitorB& _Other) = delete;
+	ArbitorB(ArbitorB&& _Other) noexcept = delete;
+	ArbitorB& operator=(const ArbitorB& _Other) = delete;
+	ArbitorB& operator=(ArbitorB&& _Other) noexcept = delete;
 
 protected:
 	//void AttEnd(const FrameAnimation_DESC& _Info);
 	void Start() override;
 	void Update(float _DeltaTime);
 	void End() {}
-	void AttEnd(const FrameAnimation_DESC& _Info);
 
 	void ChangeAni(float4 _Gopoint, float4 _WorldPos);
-	GameEngineTextureRenderer* Renderer;
+
+	void AttEnd(const FrameAnimation_DESC& _Info);
+
+	//TerranBaseBullet
 
 	GameEngineTextureRenderer* BiconRenderer;
-	Spore* TestUni;
+	GameEngineTextureRenderer* Renderer;
+	BloodBullet* TestUni;
 	float4 Color;
 	float Reach;
 public:
@@ -41,15 +44,5 @@ public:
 	bool	BAniChange;
 	bool	AttCheck;
 	bool	ListLastCheck;
-
-
-
-
-	int		AttCount;
-	int		AttCountMax;
-
-
-
-
 };
 

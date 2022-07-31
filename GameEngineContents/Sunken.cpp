@@ -43,6 +43,8 @@ void Sunken::Start()
 		Renderer->ChangeFrameAnimation("tenta");
 		Renderer->AnimationBindEnd("tenta", &Sunken::AttEnd, this);
 	}
+
+	m_Info.Dammage = 20;
 }
 
 void Sunken::Update(float _DeltaTime)
@@ -51,8 +53,13 @@ void Sunken::Update(float _DeltaTime)
 
 	if (!DamCheck)
 	{
-		((UnitBase*)TarGet)->m_Info.m_Hp -= 20;
-		DamCheck = true;
+		if (TarGet)
+		{
+			((UnitBase*)TarGet)->m_Info.m_Hp -= m_Info.Dammage;;
+			DamCheck = true;
+
+		}
+	
 
 
 	}

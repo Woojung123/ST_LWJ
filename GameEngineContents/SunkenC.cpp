@@ -1,13 +1,12 @@
 
-
 #include "PreCompile.h"
-#include "CannonB.h"
+#include "SunkenC.h"
 #include <GameEngineBase/GameEngineInput.h>
 #include <GameEngineCore/GameEngineLevel.h>
 #include "GlobalContentsValue.h"
-#include"DraBall.h"
+#include"Sunken.h"
 
-CannonB::CannonB()
+SunkenC::SunkenC()
 	: Speed(50.0f)
 	, Renderer(nullptr)
 	, BiconRenderer(nullptr)
@@ -18,36 +17,36 @@ CannonB::CannonB()
 	, AttTime(0.f)
 	, ListLastCheck(false)
 	, AttCount(0)
-	, AttCountMax(5)
+	, AttCountMax(3)
 {
 }
 
-CannonB::~CannonB()
+SunkenC::~SunkenC()
 {
 }
 
 
-void CannonB::AttEnd(const FrameAnimation_DESC& _Info)
+void SunkenC::AttEnd(const FrameAnimation_DESC& _Info)
 {
 	AttCheck = true;
-	Renderer->ChangeFrameAnimation("CannonStand");
+	Renderer->ChangeFrameAnimation("sunkenStand");
 }
 
-void CannonB::Start()
+void SunkenC::Start()
 {
 
 	GetTransform().SetLocalScale({ 1, 1, 1 });
 	{
 		Renderer = CreateComponent<GameEngineTextureRenderer>();
-		Renderer->GetTransform().SetLocalScale({ 64.f,128.f,1.f });
+		Renderer->GetTransform().SetLocalScale({ 128.f,128.f,1.f });
 
 
-		Renderer->CreateFrameAnimationFolder("CannonStand", FrameAnimation_DESC("CannonStand", 0.1f));
-		Renderer->CreateFrameAnimationFolder("CannonAtt", FrameAnimation_DESC("CannonAtt", 0.1f));
+		Renderer->CreateFrameAnimationFolder("sunkenStand", FrameAnimation_DESC("sunkenStand", 0.1f));
+		Renderer->CreateFrameAnimationFolder("sunkenAtt", FrameAnimation_DESC("sunkenAtt", 0.1f,false));
 
-		Renderer->ChangeFrameAnimation("CannonStand");
+		Renderer->ChangeFrameAnimation("sunkenStand");
 
-		Renderer->AnimationBindEnd("CannonAtt", &CannonB::AttEnd, this);
+		Renderer->AnimationBindEnd("sunkenAtt", &SunkenC::AttEnd, this);
 
 	}
 
@@ -62,7 +61,7 @@ void CannonB::Start()
 
 }
 
-void CannonB::Update(float _DeltaTime)
+void SunkenC::Update(float _DeltaTime)
 {
 	//Renderer->ChangeFrameAnimation("DragonAttack15");
 	std::list<GameEngineActor*> Group = GetLevel()->GetGroup(OBJECTORDER::Monster);
@@ -84,24 +83,17 @@ void CannonB::Update(float _DeltaTime)
 		float MonLen = Dist.Length();
 
 		++MonCount;
-		
+
 		if (MonLen <= Reach)
 		{
 			++AttCount;
-			Renderer->ChangeFrameAnimation("CannonAtt");
-			
+			Renderer->ChangeFrameAnimation("sunkenAtt");
+
 			if (AttCheck)
 			{
-				//AttCheck = false;
-
-				TestUni = GetLevel()->CreateActor<DraBall>(OBJECTORDER::Bullet);
-				MyPos.y = MyPos.y + 10.f;
-				TestUni->GetTransform().SetWorldPosition(MyPos);
-				TestUni->SetTarGet(TarGet);
+				TestUni = GetLevel()->CreateActor<Sunken>(OBJECTORDER::Bullet);
+				TestUni->GetTransform().SetWorldPosition(TarGetPos);
 				TestUni->m_Info.Dammage = 40;
-				
-
-
 			}
 			//BloodBullet
 			//Spore
@@ -116,14 +108,14 @@ void CannonB::Update(float _DeltaTime)
 				AttCount = 0;
 				break;
 			}
-			
+
 
 		}
 
 
 		if (MonCount == Monsize)
 		{
-			Renderer->ChangeFrameAnimation("CannonStand");
+			Renderer->ChangeFrameAnimation("sunkenStand");
 			AttTime = 0.f;
 			AttCountMax = 3;
 			AttCount = 0;
@@ -138,6 +130,6 @@ void CannonB::Update(float _DeltaTime)
 	float4 WorldPos = GetTransform().GetWorldPosition();
 	GetTransform().SetWorldPosition({ WorldPos.x , WorldPos.y , -19.f, WorldPos.w });
 
-
+	//Spore
 }
 

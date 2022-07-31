@@ -79,9 +79,6 @@
     <Filter Include="00.Actor\01.Unit\02.Player\00.Level1\05.Corsair">
       <UniqueIdentifier>{d8df063f-02a2-423a-862f-ff665e7c781c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="00.Actor\01.Unit\02.Player\00.Level1\07.Gardian">
-      <UniqueIdentifier>{a4257f07-719c-4137-9938-676ab931954b}</UniqueIdentifier>
-    </Filter>
     <Filter Include="00.Actor\02.UI\01.Stage">
       <UniqueIdentifier>{2768479a-1b5f-417a-8754-aa3701ac9e7a}</UniqueIdentifier>
     </Filter>
@@ -126,6 +123,27 @@
     </Filter>
     <Filter Include="00.Actor\01.Unit\02.Player\01.Level2\01.Photo">
       <UniqueIdentifier>{5d0643d0-472a-472a-9f24-973e2c69a3bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\02.Player\01.Level2\02.UltraB">
+      <UniqueIdentifier>{9271a8cf-966a-45d7-aa94-9e4e7bf13a2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\02.Player\02.Level3">
+      <UniqueIdentifier>{17de90e7-0557-4a72-9518-1ff7ef1cda1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\02.Player\02.Level3\00.Mutal">
+      <UniqueIdentifier>{9e3b3a44-8aaa-4978-8b9b-fa34817382bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\02.Player\01.Level2\03.Arbitor">
+      <UniqueIdentifier>{f3a83d3e-3c23-4f94-a613-d8d7291c9b14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\02.Player\01.Level2\04.DarkT">
+      <UniqueIdentifier>{456aa6af-b226-4297-80e7-2313c8b274ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\02.Player\01.Level2\05.SunkenC">
+      <UniqueIdentifier>{bcda6e33-7d1c-402e-9802-763934672eaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\02.Player\02.Level3\01.Gardian">
+      <UniqueIdentifier>{a4257f07-719c-4137-9938-676ab931954b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -203,7 +221,7 @@
       <Filter>00.Actor\01.Unit\02.Player\00.Level1\05.Corsair</Filter>
     </ClInclude>
     <ClInclude Include="GardianC.h">
-      <Filter>00.Actor\01.Unit\02.Player\00.Level1\07.Gardian</Filter>
+      <Filter>00.Actor\01.Unit\02.Player\02.Level3\01.Gardian</Filter>
     </ClInclude>
     <ClInclude Include="TestUI.h">
       <Filter>00.Actor\02.UI\01.Stage\00.Test</Filter>
@@ -252,6 +270,18 @@
     </ClInclude>
     <ClInclude Include="CannonB.h">
       <Filter>00.Actor\01.Unit\02.Player\01.Level2\01.Photo</Filter>
+    </ClInclude>
+    <ClInclude Include="UltraC.h">
+      <Filter>00.Actor\01.Unit\02.Player\01.Level2\02.UltraB</Filter>
+    </ClInclude>
+    <ClInclude Include="SunkenC.h">
+      <Filter>00.Actor\01.Unit\02.Player\01.Level2\05.SunkenC</Filter>
+    </ClInclude>
+    <ClInclude Include="DarkTB.h">
+      <Filter>00.Actor\01.Unit\02.Player\01.Level2\04.DarkT</Filter>
+    </ClInclude>
+    <ClInclude Include="ArbitorB.h">
+      <Filter>00.Actor\01.Unit\02.Player\01.Level2\03.Arbitor</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -323,7 +353,7 @@
       <Filter>00.Actor\01.Unit\02.Player\00.Level1\05.Corsair</Filter>
     </ClCompile>
     <ClCompile Include="GardianC.cpp">
-      <Filter>00.Actor\01.Unit\02.Player\00.Level1\07.Gardian</Filter>
+      <Filter>00.Actor\01.Unit\02.Player\02.Level3\01.Gardian</Filter>
     </ClCompile>
     <ClCompile Include="TestUI.cpp">
       <Filter>00.Actor\02.UI\01.Stage\00.Test</Filter>
@@ -375,6 +405,18 @@
     </ClCompile>
     <ClCompile Include="CannonB.cpp">
       <Filter>00.Actor\01.Unit\02.Player\01.Level2\01.Photo</Filter>
+    </ClCompile>
+    <ClCompile Include="UltraC.cpp">
+      <Filter>00.Actor\01.Unit\02.Player\01.Level2\02.UltraB</Filter>
+    </ClCompile>
+    <ClCompile Include="SunkenC.cpp">
+      <Filter>00.Actor\01.Unit\02.Player\01.Level2\05.SunkenC</Filter>
+    </ClCompile>
+    <ClCompile Include="DarkTB.cpp">
+      <Filter>00.Actor\01.Unit\02.Player\01.Level2\04.DarkT</Filter>
+    </ClCompile>
+    <ClCompile Include="ArbitorB.cpp">
+      <Filter>00.Actor\01.Unit\02.Player\01.Level2\03.Arbitor</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
