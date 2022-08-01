@@ -14,7 +14,9 @@ void TestUI::Start()
 {
 	{
 		GameEngineUIRenderer* Renderer = CreateComponent<GameEngineUIRenderer>();
-		Renderer->GetTransform().SetLocalScale({ 100, 20, 1 });
-		Renderer->GetTransform().SetLocalPosition({ 300, 300, 1 });
+		Renderer->SetTexture("Ui.png");
+		Renderer->ScaleToTexture();
+		//Renderer->GetTransform().SetLocalScale({ 100, 20, 1 });
+		Renderer->GetTransform().SetLocalPosition({ 0, 0, 1 });
 	}
 }

@@ -69,7 +69,7 @@ void StageMain::Start()
 
 
 	{
-		//TestUI* NewPlayer = CreateActor<TestUI>(OBJECTORDER::UI);
+		TestUI* NewPlayer = CreateActor<TestUI>(OBJECTORDER::UI);
 	}
 
 

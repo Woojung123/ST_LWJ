@@ -9,7 +9,6 @@ void FrameAnimation::Reset()
 	Info.CurFrame = Info.Start;
 }
 
-
 void FrameAnimation::Update(float _Delta)
 {
 
@@ -63,6 +62,16 @@ void FrameAnimation::Update(float _Delta)
 			ParentRenderer->CurTex = Texture;
 			ParentRenderer->SetTexture(Texture, Info.CurFrame);
 			ParentRenderer->SetPivot();
+
+			// 잘렸다는 거죠?
+			if (Texture->GetCutCount() != 0)
+			{
+				ParentRenderer->ScaleToCutTexture(Info.CurFrame);
+			}
+			else
+			{
+				ParentRenderer->ScaleToTexture();
+			}
 		}
 		else if (nullptr != FolderTexture)
 		{
@@ -70,6 +79,11 @@ void FrameAnimation::Update(float _Delta)
 			ParentRenderer->CurTex = FolderTexture->GetTexture(Info.CurFrame);
 			ParentRenderer->SetTexture(FolderTexture->GetTexture(Info.CurFrame));
 			ParentRenderer->SetPivot();
+
+			if (ParentRenderer->ScaleMode == SCALEMODE::IMAGE)
+			{
+				ParentRenderer->ScaleToTexture();
+			}
 		}
 		else
 		{
@@ -85,6 +99,8 @@ GameEngineTextureRenderer::GameEngineTextureRenderer()
 	: CurAni(nullptr)
 	, CurTex(nullptr)
 	, PivotMode(PIVOTMODE::CUSTOM)
+	, ScaleMode(SCALEMODE::CUSTOM)
+	, ScaleRatio(1.0f)
 {
 }
 
@@ -278,9 +294,14 @@ void GameEngineTextureRenderer::Update(float _Delta)
 
 
 
+void GameEngineTextureRenderer::ScaleToCutTexture(int _Index)
+{
+	GetTransform().SetLocalScale(CurTex->GetCutScale(_Index) * ScaleRatio);
+}
+
 void GameEngineTextureRenderer::ScaleToTexture()
 {
-	GetTransform().SetLocalScale(CurTex->GetScale());
+	GetTransform().SetLocalScale(CurTex->GetScale() * ScaleRatio);
 }
 
 void GameEngineTextureRenderer::CurAnimationReset()
@@ -291,5 +312,5 @@ void GameEngineTextureRenderer::CurAnimationReset()
 
 void GameEngineTextureRenderer::CurAnimationSetStartPivotFrame(int SetFrame)
 {
-	CurAni->Info.CurFrame += CurAni->Info.Start + SetFrame;
+	CurAni->Info.CurFrame = CurAni->Info.Start + SetFrame;
 }
