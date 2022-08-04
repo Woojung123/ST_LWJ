@@ -18,7 +18,7 @@ void StartButton::Start()
 
 	Renderer = CreateComponent<GameEngineTextureRenderer>();
 	Renderer->GetTransform().SetLocalScale({ 216.f,136.f,1.f });
-	Renderer->GetTransform().SetLocalPosition({200.f,150.f,0.f});
+	Renderer->GetTransform().SetLocalPosition({200.f,150.f,10.f});
 	Renderer->CreateFrameAnimationFolder("StartButton", FrameAnimation_DESC("MenuExitCheck", 0.1f));
 	Renderer->ChangeFrameAnimation("StartButton");
 

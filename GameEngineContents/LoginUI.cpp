@@ -22,6 +22,8 @@ void LoginUI::Start()
 	{
 		GameEngineTextureRenderer* Renderer = CreateComponent<GameEngineTextureRenderer>();
 		Renderer->GetTransform().SetLocalScale({ 800, 600, 100 });
+
+		Renderer->GetTransform().SetLocalPosition({ 0.f,0.f,-100.f });
 		Renderer->SetTexture("Logo.png");
 	}
 

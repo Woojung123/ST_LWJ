@@ -35,9 +35,7 @@ void StageLogo::Start()
 	//CameraActor->GetCameraComponent()->SetProjectionMode(CAMERAPROJECTIONMODE::Orthographic);
 
 
-	CreateActor<LogoBack>(GameObjectGroup::UI);
-
-	CreateActor<StartButton>(GameObjectGroup::UI);
+	
 
 	CreateActor<EixtButton>(GameObjectGroup::UI);
 	
@@ -45,8 +43,13 @@ void StageLogo::Start()
 
 
 
-	CreateActor<LoginUI>(GameObjectGroup::UI);
 	
+	
+	CreateActor<LogoBack>(GameObjectGroup::UI);
+
+	CreateActor<StartButton>(GameObjectGroup::UI);
+
+	CreateActor<LoginUI>(GameObjectGroup::UI);
 
 }
 

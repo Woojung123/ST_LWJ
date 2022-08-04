@@ -60,7 +60,7 @@ void GameEngineGUI::GUIRender(GameEngineLevel* _Level, float _DeltaTime)
 
     for (GameEngineGUIWindow* GUIWIndow : Windows)
     {
-        if (false == GUIWIndow->IsOpen)
+        if (false == GUIWIndow->IsUpdate())
         {
             continue;
         }
@@ -71,23 +71,23 @@ void GameEngineGUI::GUIRender(GameEngineLevel* _Level, float _DeltaTime)
 
 
 
-    // 비긴과
-    // 앤드로 이루어집니다.
+    //// 비긴과
+    //// 앤드로 이루어집니다.
 
-    std::string Text = GameEngineString::AnsiToUTF8Return("윈도우창 하나");
-    std::string Button = GameEngineString::AnsiToUTF8Return("버튼");
+    //std::string Text = GameEngineString::AnsiToUTF8Return("윈도우창 하나");
+    //std::string Button = GameEngineString::AnsiToUTF8Return("버튼");
 
-    // 윈도우 시작
-    ImGui::Begin(Text.c_str());
+    //// 윈도우 시작
+    //ImGui::Begin(Text.c_str());
 
-    // 내용
-    if (true == ImGui::Button(Button.c_str()))
-    {
+    //// 내용
+    //if (true == ImGui::Button(Button.c_str()))
+    //{
 
-    }
+    //}
 
-    // 윈도우 끝
-    ImGui::End();
+    //// 윈도우 끝
+    //ImGui::End();
 
     // 여기사이에
 

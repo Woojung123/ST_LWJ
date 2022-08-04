@@ -41,6 +41,7 @@ public:
 
 	// Member
 	ID3D11RenderTargetView* CreateRenderTargetView();
+	ID3D11ShaderResourceView* CreateShaderResourceView();
 	ID3D11DepthStencilView* CreateDepthStencilView();
 
 	void VSSetting(int _BindPoint);
@@ -77,7 +78,6 @@ public:
 	{
 		return { CutData[_Index].SizeX * static_cast<float>(Desc.Width), CutData[_Index].SizeY * static_cast<float>(Desc.Height) };
 	}
-
 
 	void TextureCreate(const D3D11_TEXTURE2D_DESC& _Desc);
 

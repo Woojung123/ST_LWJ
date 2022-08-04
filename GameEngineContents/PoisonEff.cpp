@@ -10,7 +10,7 @@
 
 
 PoisonEff::PoisonEff()
-	: Speed(1000.0f)
+	: Speed(0.0f)
 	, Renderer(nullptr)
 	, m_Dir({ 0 })
 	, TarGet(nullptr)
@@ -42,13 +42,13 @@ void PoisonEff::Start()
 
 	m_Info.Dammage = 10;
 
-	Death(5.f);
+	//Death(5.f);
 
 }
 
 void PoisonEff::Update(float _DeltaTime)
 {
-
+	Speed += _DeltaTime;
 
 	if (TarGet)
 	{
@@ -61,7 +61,12 @@ void PoisonEff::Update(float _DeltaTime)
 		if (m_dotDam >= 1.f)
 		{
 			m_dotDam -= 1.f;
-			((UnitBase*)TarGet)->m_Info.m_Hp -= m_Info.Dammage;;
+			((UnitBase*)TarGet)->m_Info.m_Hp -= m_Info.Dammage;
+
+			if (((UnitBase*)TarGet)->m_Info.m_Hp <= 0.f)
+			{
+				Death();
+			}
 
 		}
 
@@ -72,6 +77,12 @@ void PoisonEff::Update(float _DeltaTime)
 		return;
 	}
 
+
+	if (Speed >= 5.f)
+	{
+		Death();
+		return;
+	}
 
 	float4 WorldPos = GetTransform().GetWorldPosition();
 	GetTransform().SetWorldPosition({ WorldPos.x , WorldPos.y , -45.f, WorldPos.w });

@@ -145,6 +145,54 @@
     <Filter Include="00.Actor\01.Unit\02.Player\02.Level3\01.Gardian">
       <UniqueIdentifier>{a4257f07-719c-4137-9938-676ab931954b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="00.Actor\04.Bullet\07.MutBull">
+      <UniqueIdentifier>{6b361e45-ea3d-4061-b7fd-21ef6f890659}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\02.Player\02.Level3\02.Carrier">
+      <UniqueIdentifier>{6fc63178-eb91-4c39-81d8-dff544f039d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\02.Player\02.Level3\03.River">
+      <UniqueIdentifier>{57f64bdf-22e9-44ee-adc1-ae31da6e4891}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\02.Player\02.Level3\04.Arcon">
+      <UniqueIdentifier>{40a197bf-0bb2-48f4-bd5b-3dd2576c0b68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\04.Bullet\08.ArconBullet">
+      <UniqueIdentifier>{0294ac63-a1f5-46fd-8d10-50999d40e6f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\04.Bullet\09.RiverBoom">
+      <UniqueIdentifier>{a410e25c-9316-41dd-9420-d5b9d222371b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\02.Player\03.Level4">
+      <UniqueIdentifier>{bc8a07d4-fdfc-42a6-a550-b015d6541b93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\02.Player\03.Level4\00.GostS">
+      <UniqueIdentifier>{f37fc2d9-34e5-405f-a14a-2a5a4a67c8d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\02.Player\03.Level4\01.DroneS">
+      <UniqueIdentifier>{5e5ed334-6e81-4504-a865-8cc33204adfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\02.Player\03.Level4\02.ProbeS">
+      <UniqueIdentifier>{2ab38d94-f06c-4e99-8733-888fa8eebcb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\04.Bullet\10.CorSplash">
+      <UniqueIdentifier>{93063fcd-30fe-4cf2-a0c0-38a1e26082c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\01.Unit\02.Player\03.Level4\03.hydraS">
+      <UniqueIdentifier>{899e3c56-a955-45d8-84c7-ed8ea608b6e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\04.Bullet\11.SGhostBullet">
+      <UniqueIdentifier>{0a2130b8-d6ad-4a6b-8876-5a200a2c21ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\04.Bullet\11.SGhostBullet\00.ExSmall">
+      <UniqueIdentifier>{21571b54-ae94-48ae-9682-1b1805c50819}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\04.Bullet\11.SGhostBullet\01.ExMid">
+      <UniqueIdentifier>{87ce06a7-e15d-4e59-9780-7c7bb81913b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Actor\04.Bullet\11.SGhostBullet\02.ExBig">
+      <UniqueIdentifier>{f8fda148-d808-44ef-a2ea-0c81dfd5a3fa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ContentsCore.h">
@@ -283,6 +331,54 @@
     <ClInclude Include="ArbitorB.h">
       <Filter>00.Actor\01.Unit\02.Player\01.Level2\03.Arbitor</Filter>
     </ClInclude>
+    <ClInclude Include="MutalA.h">
+      <Filter>00.Actor\01.Unit\02.Player\02.Level3\00.Mutal</Filter>
+    </ClInclude>
+    <ClInclude Include="mutalBullet.h">
+      <Filter>00.Actor\04.Bullet\07.MutBull</Filter>
+    </ClInclude>
+    <ClInclude Include="MutalEff.h">
+      <Filter>00.Actor\04.Bullet\07.MutBull</Filter>
+    </ClInclude>
+    <ClInclude Include="Carrier.h">
+      <Filter>00.Actor\01.Unit\02.Player\02.Level3\02.Carrier</Filter>
+    </ClInclude>
+    <ClInclude Include="River.h">
+      <Filter>00.Actor\01.Unit\02.Player\02.Level3\03.River</Filter>
+    </ClInclude>
+    <ClInclude Include="Arcon.h">
+      <Filter>00.Actor\01.Unit\02.Player\02.Level3\04.Arcon</Filter>
+    </ClInclude>
+    <ClInclude Include="ArconBul.h">
+      <Filter>00.Actor\04.Bullet\08.ArconBullet</Filter>
+    </ClInclude>
+    <ClInclude Include="RiverBullet.h">
+      <Filter>00.Actor\04.Bullet\09.RiverBoom</Filter>
+    </ClInclude>
+    <ClInclude Include="RiverTrail.h">
+      <Filter>00.Actor\04.Bullet\09.RiverBoom</Filter>
+    </ClInclude>
+    <ClInclude Include="RiverBoom.h">
+      <Filter>00.Actor\04.Bullet\09.RiverBoom</Filter>
+    </ClInclude>
+    <ClInclude Include="CorSplash.h">
+      <Filter>00.Actor\04.Bullet\10.CorSplash</Filter>
+    </ClInclude>
+    <ClInclude Include="GhostS.h">
+      <Filter>00.Actor\01.Unit\02.Player\03.Level4\00.GostS</Filter>
+    </ClInclude>
+    <ClInclude Include="SGbullet.h">
+      <Filter>00.Actor\04.Bullet\11.SGhostBullet</Filter>
+    </ClInclude>
+    <ClInclude Include="SGExSmall.h">
+      <Filter>00.Actor\04.Bullet\11.SGhostBullet\00.ExSmall</Filter>
+    </ClInclude>
+    <ClInclude Include="SGExMid.h">
+      <Filter>00.Actor\04.Bullet\11.SGhostBullet\01.ExMid</Filter>
+    </ClInclude>
+    <ClInclude Include="SGExBig.h">
+      <Filter>00.Actor\04.Bullet\11.SGhostBullet\02.ExBig</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ContentsCore.cpp">
@@ -417,6 +513,54 @@
     </ClCompile>
     <ClCompile Include="ArbitorB.cpp">
       <Filter>00.Actor\01.Unit\02.Player\01.Level2\03.Arbitor</Filter>
+    </ClCompile>
+    <ClCompile Include="MutalA.cpp">
+      <Filter>00.Actor\01.Unit\02.Player\02.Level3\00.Mutal</Filter>
+    </ClCompile>
+    <ClCompile Include="mutalBullet.cpp">
+      <Filter>00.Actor\04.Bullet\07.MutBull</Filter>
+    </ClCompile>
+    <ClCompile Include="MutalEff.cpp">
+      <Filter>00.Actor\04.Bullet\07.MutBull</Filter>
+    </ClCompile>
+    <ClCompile Include="Carrier.cpp">
+      <Filter>00.Actor\01.Unit\02.Player\02.Level3\02.Carrier</Filter>
+    </ClCompile>
+    <ClCompile Include="River.cpp">
+      <Filter>00.Actor\01.Unit\02.Player\02.Level3\03.River</Filter>
+    </ClCompile>
+    <ClCompile Include="Arcon.cpp">
+      <Filter>00.Actor\01.Unit\02.Player\02.Level3\04.Arcon</Filter>
+    </ClCompile>
+    <ClCompile Include="ArconBul.cpp">
+      <Filter>00.Actor\04.Bullet\08.ArconBullet</Filter>
+    </ClCompile>
+    <ClCompile Include="RiverBullet.cpp">
+      <Filter>00.Actor\04.Bullet\09.RiverBoom</Filter>
+    </ClCompile>
+    <ClCompile Include="RiverTrail.cpp">
+      <Filter>00.Actor\04.Bullet\09.RiverBoom</Filter>
+    </ClCompile>
+    <ClCompile Include="RiverBoom.cpp">
+      <Filter>00.Actor\04.Bullet\09.RiverBoom</Filter>
+    </ClCompile>
+    <ClCompile Include="CorSplash.cpp">
+      <Filter>00.Actor\04.Bullet\10.CorSplash</Filter>
+    </ClCompile>
+    <ClCompile Include="GhostS.cpp">
+      <Filter>00.Actor\01.Unit\02.Player\03.Level4\00.GostS</Filter>
+    </ClCompile>
+    <ClCompile Include="SGbullet.cpp">
+      <Filter>00.Actor\04.Bullet\11.SGhostBullet</Filter>
+    </ClCompile>
+    <ClCompile Include="SGExSmall.cpp">
+      <Filter>00.Actor\04.Bullet\11.SGhostBullet\00.ExSmall</Filter>
+    </ClCompile>
+    <ClCompile Include="SGExMid.cpp">
+      <Filter>00.Actor\04.Bullet\11.SGhostBullet\01.ExMid</Filter>
+    </ClCompile>
+    <ClCompile Include="SGExBig.cpp">
+      <Filter>00.Actor\04.Bullet\11.SGhostBullet\02.ExBig</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

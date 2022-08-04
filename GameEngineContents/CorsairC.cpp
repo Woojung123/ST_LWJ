@@ -5,7 +5,7 @@
 #include <GameEngineBase/GameEngineInput.h>
 #include <GameEngineCore/GameEngineLevel.h>
 #include "GlobalContentsValue.h"
-#include"PoisonEff.h"
+#include"CorSplash.h"
 
 CorsairC::CorsairC()
 	: Speed(50.0f)
@@ -126,9 +126,9 @@ void CorsairC::Update(float _DeltaTime)
 
 				BAniChange = false;
 
-				TestUni = GetLevel()->CreateActor<PoisonEff>(OBJECTORDER::Bullet);
+				TestUni = GetLevel()->CreateActor<CorSplash>(OBJECTORDER::Bullet);
 				TestUni->GetTransform().SetWorldPosition(TarGetPos);
-				TestUni->SetTarGet(TarGet);
+				//TestUni->SetTarGet(TarGet);
 
 			}
 			break;

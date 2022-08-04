@@ -27,6 +27,15 @@
 #include "SunkenC.h"
 #include "DarkTB.h"
 #include "ArbitorB.h"
+#include "MutalA.h"
+#include "Arcon.h"
+#include "River.h"
+#include "Carrier.h"
+#include "GhostS.h"
+
+
+
+
 
 
 
@@ -63,7 +72,7 @@ void StageMain::Start()
 
 	/*{
 		GameEngineCameraActor* actor = CreateActor<GameEngineCameraActor>();
-		actor->GetCameraComponent()->SetProjectionMode(CAMERAPROJECTIONMODE::Orthographic);
+		actor->GetCameraComponent()->SetProjecstionMode(CAMERAPROJECTIONMODE::Orthographic);
 		actor->GetTransform().SetLocalPosition({ 0.0f, 0.0f, -500.0f });
 	}*/
 
@@ -206,9 +215,39 @@ void StageMain::Start()
 
 
 
+	{
+		MutalA* TestUni = CreateActor<MutalA>(OBJECTORDER::Player);
+		TestUni->GetTransform().SetWorldPosition({ -1290.f,310.f,0.f });
+	}
 
 
 	
+	{
+		Arcon* TestUni = CreateActor<Arcon>(OBJECTORDER::Player);
+		TestUni->GetTransform().SetWorldPosition({ -810.f,370.f,0.f });
+	}
+
+
+	{
+		River* TestUni = CreateActor<River>(OBJECTORDER::Player);
+		TestUni->GetTransform().SetWorldPosition({ -750.f,370.f,0.f });
+	}
+
+	{
+		Carrier* TestUni = CreateActor<Carrier>(OBJECTORDER::Player);
+		TestUni->GetTransform().SetWorldPosition({ -750.f,310.f,0.f });
+	}
+
+	{
+		GhostS* TestUni = CreateActor<GhostS>(OBJECTORDER::Player);
+		TestUni->GetTransform().SetWorldPosition({ -810.f,190.f,0.f });
+	}
+
+
+	
+	
+
+
 
 }
 void StageMain::Update(float _DeltaTime)
@@ -310,7 +349,7 @@ void StageMain::Stage1(float _DeltaTime)
 
 		{
 			corsairMon* TestUni = CreateActor<corsairMon>(OBJECTORDER::Monster);
-			TestUni->m_Info.m_Hp = 1300;
+			TestUni->m_Info.m_Hp = 3300;
 			TestUni->m_Info.Gold = 8;
 			auto	iter = CheckPoint.begin();
 			auto	iterEnd = CheckPoint.end();

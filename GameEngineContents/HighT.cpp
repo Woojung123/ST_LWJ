@@ -12,7 +12,7 @@ HighT::HighT()
 	: Speed(50.0f)
 	, Renderer(nullptr)
 	, BiconRenderer(nullptr)
-	, Reach(150.f)
+	, Reach(200.f)
 	, TestUni(nullptr)
 	, AttCheck(false)
 	, AttTimeMax(0.4f)
@@ -108,7 +108,7 @@ void HighT::Update(float _DeltaTime)
 	{
 		FATTDelayTime += _DeltaTime;
 
-		if (FATTDelayTime >= 5.f)
+		if (FATTDelayTime >= 1.f)
 		{
 			AttCheck = true;
 			FATTDelayTime = 0.f;

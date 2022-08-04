@@ -9,7 +9,7 @@
 ArbitorB::ArbitorB()
 	: Speed(50.0f)
 	, Renderer(nullptr)
-	, Reach(150.f)
+	, Reach(200.f)
 	, TestUni(nullptr)
 	, AttCheck(false)
 	, AttTimeMax(0.4f)

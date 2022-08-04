@@ -10,7 +10,7 @@
 GardianC::GardianC()
 	: Speed(50.0f)
 	, Renderer(nullptr)
-	, Reach(150.f)
+	, Reach(250.f)
 	, TestUni(nullptr)
 	, AttCheck(false)
 	, AttTimeMax(0.4f)
@@ -93,16 +93,31 @@ void GardianC::Start()
 
 	{
 
-		BiconRenderer = CreateComponent<GameEngineTextureRenderer>();
-		BiconRenderer->CreateFrameAnimationFolder("aulora0", FrameAnimation_DESC("aulora0", 0.1f));
-		BiconRenderer->ChangeFrameAnimation("aulora0");
-		BiconRenderer->GetTransform().SetLocalScale({ 120.f,120.f,1.f });
-		float4 RenderWorldPos = BiconRenderer->GetTransform().GetWorldPosition();
+		AuraRenderer = CreateComponent<GameEngineTextureRenderer>();
+		AuraRenderer->CreateFrameAnimationFolder("aulora0", FrameAnimation_DESC("aulora0", 0.1f));
+		AuraRenderer->ChangeFrameAnimation("aulora0");
+		AuraRenderer->GetTransform().SetLocalScale({ 120.f,120.f,1.f });
+		float4 RenderWorldPos = AuraRenderer->GetTransform().GetWorldPosition();
 		
-		BiconRenderer->GetTransform().SetWorldPosition(RenderWorldPos);
+		AuraRenderer->GetTransform().SetWorldPosition(RenderWorldPos);
 
 		 
 	}
+
+
+	{
+		BiconRenderer = CreateComponent<GameEngineTextureRenderer>();
+		BiconRenderer->CreateFrameAnimationFolder("pool", FrameAnimation_DESC("pool", 0.1f));
+		BiconRenderer->ChangeFrameAnimation("pool");
+		BiconRenderer->GetTransform().SetLocalScale({ 96.f,128.f,1.f });
+		float4 RenderWorldPos = BiconRenderer->GetTransform().GetWorldPosition();
+		BiconRenderer->GetTransform().SetWorldPosition({ RenderWorldPos.x - 5.f, RenderWorldPos.y - 5.f , 1.f });
+
+
+	}
+
+
+
 }
 
 void GardianC::Update(float _DeltaTime)

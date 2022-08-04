@@ -78,7 +78,7 @@ void ContentsCore::Start()
 
 	}
 
-	
+	//GameEngineFont::Load("±Ã¼­");
 
 	if (false == GameEngineInput::GetInst()->IsKey("LevelChangeKey"))
 	{
@@ -1370,7 +1370,26 @@ void ContentsCore::Start()
 
 
 
+	//Ç®
+	{
+		GameEngineDirectory Dir;
 
+		Dir.MoveParentToExitsChildDirectory("ConstantResources");
+		Dir.Move("ConstantResources");
+		Dir.Move("Texture");
+		Dir.Move("Multi");
+		Dir.Move("Unit");
+		Dir.Move("zerg");
+		Dir.Move("Build");
+
+
+		Dir.Move("pool");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+	
+
+	}
 
 	//Àú±Û¸µ1
 	{
@@ -1607,6 +1626,467 @@ void ContentsCore::Start()
 	}
 
 
+	//¹ÂÅ»1
+	{
+		GameEngineDirectory Dir;
+
+		Dir.MoveParentToExitsChildDirectory("ConstantResources");
+		Dir.Move("ConstantResources");
+		Dir.Move("Texture");
+		Dir.Move("Multi");
+		Dir.Move("Unit");
+		Dir.Move("zerg");
+		Dir.Move("mutal");
+
+		Dir.Move("mutalMove0");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../mutalMove1");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../mutalMove2");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+
+		Dir.Move("../mutalMove3");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../mutalMove4");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+
+
+	}
+	//¹ÂÅ»2
+	{
+		GameEngineDirectory Dir;
+
+		Dir.MoveParentToExitsChildDirectory("ConstantResources");
+		Dir.Move("ConstantResources");
+		Dir.Move("Texture");
+		Dir.Move("Multi");
+		Dir.Move("Unit");
+		Dir.Move("zerg");
+		Dir.Move("mutal");
+
+
+		Dir.Move("mutalMove5");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../mutalMove6");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+
+		Dir.Move("../mutalMove7");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../mutalMove8");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../mutalMove9");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../mutalMove10");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+	}
+
+	//¹ÂÅ»3
+	{
+		GameEngineDirectory Dir;
+
+		Dir.MoveParentToExitsChildDirectory("ConstantResources");
+		Dir.Move("ConstantResources");
+		Dir.Move("Texture");
+		Dir.Move("Multi");
+		Dir.Move("Unit");
+		Dir.Move("zerg");
+		Dir.Move("mutal");
+
+
+		Dir.Move("mutalMove11");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../mutalMove12");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../mutalMove13");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../mutalMove14");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../mutalMove15");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+
+
+	}
+
+
+	//¾ÆÄÜ1
+	{
+		GameEngineDirectory Dir;
+
+		Dir.MoveParentToExitsChildDirectory("ConstantResources");
+		Dir.Move("ConstantResources");
+		Dir.Move("Texture");
+		Dir.Move("Multi");
+		Dir.Move("Unit");
+		Dir.Move("protoss");
+		Dir.Move("Archon");
+
+		Dir.Move("ArchonAttack0");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ArchonAttack1");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ArchonAttack2");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+
+		Dir.Move("../ArchonAttack3");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ArchonAttack4");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ArchonAttack5");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+	}
+	//¾ÆÄÜ2
+	{
+		GameEngineDirectory Dir;
+
+		Dir.MoveParentToExitsChildDirectory("ConstantResources");
+		Dir.Move("ConstantResources");
+		Dir.Move("Texture");
+		Dir.Move("Multi");
+		Dir.Move("Unit");
+		Dir.Move("protoss");
+		Dir.Move("Archon");
+
+
+		Dir.Move("ArchonAttack6");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ArchonAttack7");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+
+		Dir.Move("../ArchonAttack8");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ArchonAttack9");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ArchonAttack10");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ArchonAttack11");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+	}
+
+	//¾ÆÄÜ3
+	{
+		GameEngineDirectory Dir;
+
+		Dir.MoveParentToExitsChildDirectory("ConstantResources");
+		Dir.Move("ConstantResources");
+		Dir.Move("Texture");
+		Dir.Move("Multi");
+		Dir.Move("Unit");
+		Dir.Move("protoss");
+		Dir.Move("Archon");
+
+
+		Dir.Move("ArchonAttack12");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ArchonAttack13");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ArchonAttack14");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ArchonAttack15");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ArchonMove12");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../Archonback0");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+	}
+
+
+
+
+
+	//¸®¹ö1
+	{
+		GameEngineDirectory Dir;
+
+		Dir.MoveParentToExitsChildDirectory("ConstantResources");
+		Dir.Move("ConstantResources");
+		Dir.Move("Texture");
+		Dir.Move("Multi");
+		Dir.Move("Unit");
+		Dir.Move("protoss");
+		Dir.Move("River");
+
+		Dir.Move("RiverMove0");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../RiverMove1");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../RiverMove2");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+
+		Dir.Move("../RiverMove3");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../RiverMove4");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../RiverMove5");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+	}
+	//¸®¹ö2
+	{
+		GameEngineDirectory Dir;
+
+		Dir.MoveParentToExitsChildDirectory("ConstantResources");
+		Dir.Move("ConstantResources");
+		Dir.Move("Texture");
+		Dir.Move("Multi");
+		Dir.Move("Unit");
+		Dir.Move("protoss");
+		Dir.Move("River");
+
+
+		Dir.Move("RiverMove6");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../RiverMove7");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+
+		Dir.Move("../RiverMove8");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../RiverMove9");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../RiverMove10");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../RiverMove11");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+	}
+
+	//¸®¹ö3
+	{
+		GameEngineDirectory Dir;
+
+		Dir.MoveParentToExitsChildDirectory("ConstantResources");
+		Dir.Move("ConstantResources");
+		Dir.Move("Texture");
+		Dir.Move("Multi");
+		Dir.Move("Unit");
+		Dir.Move("protoss");
+		Dir.Move("River");
+
+
+		Dir.Move("RiverMove12");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../RiverMove13");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../RiverMove14");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../RiverMove15");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		
+
+	}
+
+
+
+
+	//Ä³¸®¾î1
+	{
+		GameEngineDirectory Dir;
+
+		Dir.MoveParentToExitsChildDirectory("ConstantResources");
+		Dir.Move("ConstantResources");
+		Dir.Move("Texture");
+		Dir.Move("Multi");
+		Dir.Move("Unit");
+		Dir.Move("protoss");
+		Dir.Move("Carrier");
+
+		Dir.Move("CarrierMove0");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../CarrierMove1");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../CarrierMove2");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+
+		Dir.Move("../CarrierMove3");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../CarrierMove4");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../CarrierMove5");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+	}
+	//Ä³¸®¾î2
+	{
+		GameEngineDirectory Dir;
+
+		Dir.MoveParentToExitsChildDirectory("ConstantResources");
+		Dir.Move("ConstantResources");
+		Dir.Move("Texture");
+		Dir.Move("Multi");
+		Dir.Move("Unit");
+		Dir.Move("protoss");
+		Dir.Move("Carrier");
+
+
+		Dir.Move("CarrierMove6");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../CarrierMove7");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+
+		Dir.Move("../CarrierMove8");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../CarrierMove9");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../CarrierMove10");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../CarrierMove11");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+	}
+
+	//Ä³¸®¾î3
+	{
+		GameEngineDirectory Dir;
+
+		Dir.MoveParentToExitsChildDirectory("ConstantResources");
+		Dir.Move("ConstantResources");
+		Dir.Move("Texture");
+		Dir.Move("Multi");
+		Dir.Move("Unit");
+		Dir.Move("protoss");
+		Dir.Move("Carrier");
+
+
+		Dir.Move("CarrierMove12");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../CarrierMove13");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../CarrierMove14");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../CarrierMove15");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+
+
+	}
+
+
 
 	//ÃÑ¾Ë
 	{
@@ -1638,10 +2118,6 @@ void ContentsCore::Start()
 
 		GameEngineFolderTexture::Load(Dir.GetFullPath());
 
-
-		/*Dir.Move("../storm");
-
-		GameEngineFolderTexture::Load(Dir.GetFullPath());*/
 
 
 	}
@@ -1712,7 +2188,74 @@ void ContentsCore::Start()
 
 		GameEngineFolderTexture::Load(Dir.GetFullPath());
 
+		Dir.Move("../ArconHit");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+
+	}
+
+	//ÀÌÆåÆ®3
+	{
+		GameEngineDirectory Dir;
+
+		Dir.MoveParentToExitsChildDirectory("ConstantResources");
+		Dir.Move("ConstantResources");
+		Dir.Move("Texture");
+		Dir.Move("Multi");
+		Dir.Move("Effect2");
+
+		Dir.Move("Scarab0");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ScarabM");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../ScarabE");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../Explosion_L");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../Explosion_M");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../Explosion_S");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+
+		Dir.Move("../Maelstorm");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+		Dir.Move("../Feedback");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
+	}
+
+	//ÀÌÆåÆ®4
+	{
+		GameEngineDirectory Dir;
+
+		Dir.MoveParentToExitsChildDirectory("ConstantResources");
+		Dir.Move("ConstantResources");
+		Dir.Move("Texture");
+		Dir.Move("Multi");
+		Dir.Move("Effect2");
+
+		Dir.Move("Corsair_Splash");
+
+		GameEngineFolderTexture::Load(Dir.GetFullPath());
+
 		
+
 	}
 
 

@@ -141,6 +141,12 @@
     <ClInclude Include="GameEngineUIRenderer.h">
       <Filter>Object\Component\Rendering\Content</Filter>
     </ClInclude>
+    <ClInclude Include="GameEngineFontRenderer.h">
+      <Filter>Object\Component\Rendering\Content</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngineFont.h">
+      <Filter>Resources\Font</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameEngineActor.cpp">
@@ -276,6 +282,12 @@
     <ClCompile Include="GameEngineUIRenderer.cpp">
       <Filter>Object\Component\Rendering\Content</Filter>
     </ClCompile>
+    <ClCompile Include="GameEngineFontRenderer.cpp">
+      <Filter>Object\Component\Rendering\Content</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngineFont.cpp">
+      <Filter>Resources\Font</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Object">
@@ -350,6 +362,9 @@
     <Filter Include="GUI\GUIWondow">
       <UniqueIdentifier>{51cf4ea0-d1ef-48b5-af63-78de940d962b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resources\Font">
+      <UniqueIdentifier>{b7a6699a-a35f-4495-a2bf-cd94f6a3757e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <CopyFileToFolders Include="ThirdParty\bin\Release\DirectXTex.lib">
@@ -357,6 +372,18 @@
     </CopyFileToFolders>
     <CopyFileToFolders Include="ThirdParty\bin\Debug\DirectXTex.lib">
       <Filter>ThirdParty\Lib\Debug</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="ThirdParty\bin\Release\FW1FontWrapper.lib">
+      <Filter>ThirdParty\Lib\Release</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="ThirdParty\bin\Debug\FW1FontWrapper.lib">
+      <Filter>ThirdParty\Lib\Debug</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="ThirdParty\bin\Debug\FW1FontWrapper.dll">
+      <Filter>ThirdParty\Lib\Debug</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="ThirdParty\bin\Release\FW1FontWrapper.dll">
+      <Filter>ThirdParty\Lib\Release</Filter>
     </CopyFileToFolders>
   </ItemGroup>
 </Project>

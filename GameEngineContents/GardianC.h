@@ -29,6 +29,7 @@ protected:
 	GameEngineTextureRenderer* Renderer;
 
 	GameEngineTextureRenderer* BiconRenderer;
+	GameEngineTextureRenderer* AuraRenderer;
 	Spore* TestUni;
 	float4 Color;
 	float Reach;

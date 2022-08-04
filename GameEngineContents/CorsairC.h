@@ -3,7 +3,7 @@
 #include <GameEngineCore/CoreMinimal.h>
 #include "UnitBase.h"
 // Ό³Έν :
-class PoisonEff;
+class CorSplash;
 class GameEngineTextureRenderer;
 class CorsairC : public UnitBase
 {
@@ -27,7 +27,7 @@ protected:
 
 	void ChangeAni(float4 _Gopoint, float4 _WorldPos);
 	GameEngineTextureRenderer* Renderer;
-	PoisonEff* TestUni;
+	CorSplash* TestUni;
 	float4 Color;
 	float Reach;
 public:
